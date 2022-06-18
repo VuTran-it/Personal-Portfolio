@@ -45,9 +45,6 @@ function addBackSection(num)
 }
 
 function showSection(element) {
-    /* allSection.forEach((item) => {
-        item.classList.remove('active')
-    }) */
     for (let i = 0; i < totalSection; i++) {
         allSection[i].classList.remove("active")
     }

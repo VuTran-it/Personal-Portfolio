@@ -9,13 +9,15 @@
 
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="../css/loader.css">
+
     <!-- Style-Switcher -->
     <link rel="stylesheet" href="../css/style-switcher.css">
-    <link rel="stylesheet" href="../css/color-1.css" class="alternate-style" title="color-1" >
-    <link rel="stylesheet" href="../css/color-2.css" class="alternate-style" title="color-2" disabled>
-    <link rel="stylesheet" href="../css/color-3.css" class="alternate-style" title="color-3" disabled>
-    <link rel="stylesheet" href="../css/color-4.css" class="alternate-style" title="color-4" disabled>
-    <link rel="stylesheet" href="../css/color-5.css" class="alternate-style" title="color-5" disabled>
+    <link rel="stylesheet" href="../css/Color/color-1.css" class="alternate-style" title="color-1">
+    <link rel="stylesheet" href="../css/Color/color-2.css" class="alternate-style" title="color-2" disabled>
+    <link rel="stylesheet" href="../css/Color/color-3.css" class="alternate-style" title="color-3" disabled>
+    <link rel="stylesheet" href="../css/Color/color-4.css" class="alternate-style" title="color-4" disabled>
+    <link rel="stylesheet" href="../css/Color/color-5.css" class="alternate-style" title="color-5" disabled>
 
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
@@ -24,7 +26,32 @@
 </head>
 
 <body>
-    <div class="cursor"></div>
+    <div id="loader-background">
+        <div class="loader" style="--clr:#ffb400;">
+            <span style="--i:1;"></span>
+            <span style="--i:2;"></span>
+            <span style="--i:3;"></span>
+            <span style="--i:4;"></span>
+            <span style="--i:5;"></span>
+            <span style="--i:6;"></span>
+            <span style="--i:7;"></span>
+            <span style="--i:8;"></span>
+            <span style="--i:9;"></span>
+            <span style="--i:10;"></span>
+            <span style="--i:11;"></span>
+            <span style="--i:12;"></span>
+            <span style="--i:13;"></span>
+            <span style="--i:14;"></span>
+            <span style="--i:15;"></span>
+            <span style="--i:16;"></span>
+            <span style="--i:17;"></span>
+            <span style="--i:18;"></span>
+            <span style="--i:19;"></span>
+            <span style="--i:20;"></span>
+            <div class="rocket"></div>
+            <div class="value-loader">0%</div>
+        </div>
+    </div>
     <!-- Main Container Start -->
     <div class="main-container">
         <!-- Aside Start -->
@@ -301,8 +328,8 @@
                         </div>
                         <!-- Service item End -->
 
-                         <!-- Service item start -->
-                         <div class="service-item padd-15">
+                        <!-- Service item start -->
+                        <div class="service-item padd-15">
                             <div class="service-item-inner">
                                 <div class="icon">
                                     <i class="fa-solid fa-laptop-code"></i>
@@ -388,7 +415,7 @@
                             <h2>My last Projects :</h2>
                         </div>
                     </div>
-                    
+
                     <div class="row">
                         <!-- portfolio item start -->
                         <div class="portfolio-item padd-15">
@@ -445,7 +472,7 @@
                         </div>
                         <!-- portfolio item end -->
                     </div>
-                </div>                
+                </div>
             </section>
             <!-- Portfolio Section End -->
 
@@ -469,8 +496,8 @@
                             <p>+84 336591847</p>
                         </div>
                         <!-- Contact info item end -->
-                         <!-- Contact info item start -->
-                         <div class="contact-info-item padd-15">
+                        <!-- Contact info item start -->
+                        <div class="contact-info-item padd-15">
                             <div class="icon">
                                 <i class="fa-solid fa-location-dot"></i>
                             </div>
@@ -478,8 +505,8 @@
                             <p>Ho Chi Minh City</p>
                         </div>
                         <!-- Contact info item end -->
-                         <!-- Contact info item start -->
-                         <div class="contact-info-item padd-15">
+                        <!-- Contact info item start -->
+                        <div class="contact-info-item padd-15">
                             <div class="icon">
                                 <i class="fa-solid fa-envelope"></i>
                             </div>
@@ -500,76 +527,79 @@
                     <h3 class="contact-title padd-15">SEND ME AN EMAIL</h3>
                     <h4 class="contact-sub-title padd-15">I'M VERY RESPONSIVE TO MASSAGE</h4>
                     <!-- Contact Form start -->
-                        <div class="row">
-                            <div class="contact-form padd-15">
-                                <div class="row">
-                                    <div class="form-item col-6 padd-15">
-                                        <div class="inputBox">
-                                            <input type="text" required="required" placeholder="Name">
-                                            <span>Name</span>
-                                        </div>
+                    <div class="row">
+                        <div class="contact-form padd-15">
+                            <div class="row">
+                                <div class="form-item col-6 padd-15">
+                                    <div class="inputBox">
+                                        <input type="text" required="required" placeholder="Name">
+                                        <span>Name</span>
                                     </div>
+                                </div>
 
-                                    <div class="form-item col-6 padd-15">
-                                        <div class="inputBox">
-                                            <input type="text" required="required" placeholder="Email">
-                                            <span>Email</span>
-                                        </div>
+                                <div class="form-item col-6 padd-15">
+                                    <div class="inputBox">
+                                        <input type="text" required="required" placeholder="Email">
+                                        <span>Email</span>
                                     </div>
+                                </div>
 
-                                    <div class="form-item col-12 padd-15">
-                                        <div class="inputBox">
-                                            <input type="text" required="required" placeholder="Subject">
-                                            <span>Subject</span>
-                                        </div>
+                                <div class="form-item col-12 padd-15">
+                                    <div class="inputBox">
+                                        <input type="text" required="required" placeholder="Subject">
+                                        <span>Subject</span>
                                     </div>
+                                </div>
 
-                                    <div class="form-item col-12 padd-15">
-                                        <div class="inputBox">
-                                            <textarea name="" placeholder="Message"></textarea>
-                                            <span>Message</span>
-                                        </div>
+                                <div class="form-item col-12 padd-15">
+                                    <div class="inputBox">
+                                        <textarea name="" placeholder="Message"></textarea>
                                     </div>
+                                </div>
 
-                                    <div class="form-item col-12 padd-15">
-                                       <button type="submit" class="btn">Send Message</button>
-                                    </div>
+                                <div class="form-item col-12 padd-15">
+                                    <button type="submit" class="btn">Send Message</button>
                                 </div>
                             </div>
                         </div>
+                    </div>
                     <!-- Contact Form end -->
                 </div>
             </section>
             <!-- Contact Section Start -->
         </div>
         <!-- Main Content End -->
+        <!-- Style Switcher Start -->
+        <div class="style-switcher">
+            <div class="style-switcher-toggler s-icon">
+                <i class="fa-solid fa-gear"></i>
+            </div>
+
+            <div class="day-night s-icon">
+                <i class="fa-solid"></i>
+            </div>
+
+            <h4>Theme Colors</h4>
+            <div class="colors">
+                <span class="color-1" onclick="setActiveStyle('color-1')"></span>
+                <span class="color-2" onclick="setActiveStyle('color-2')"></span>
+                <span class="color-3" onclick="setActiveStyle('color-3')"></span>
+                <span class="color-4" onclick="setActiveStyle('color-4')"></span>
+                <span class="color-5" onclick="setActiveStyle('color-5')"></span>
+            </div>
+        </div>
+        <!-- Style Switcher End -->
     </div>
     <!-- Main Container End -->
-    
-    <!-- Style Switcher Start -->
-    <div class="style-switcher">
-        <div class="style-switcher-toggler s-icon">
-            <i class="fa-solid fa-gear"></i>
-        </div>
 
-        <div class="day-night s-icon">
-            <i class="fa-solid"></i>
-        </div>
 
-        <h4>Theme Colors</h4>
-        <div class="colors">
-            <span class="color-1" onclick="setActiveStyle('color-1')"></span>
-            <span class="color-2" onclick="setActiveStyle('color-2')"></span>
-            <span class="color-3" onclick="setActiveStyle('color-3')"></span>
-            <span class="color-4" onclick="setActiveStyle('color-4')"></span>
-            <span class="color-5" onclick="setActiveStyle('color-5')"></span>
-        </div>
-    </div>
-    <!-- Style Switcher End -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" referrerpolicy="no-referrer"></script>
+    <script src="../js/loader.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"
+        referrerpolicy="no-referrer"></script>
 
     <script src="../js/index.js"></script>
     <script src="../js/style-switcher.js"></script>
+
 </body>
 
 </html>
